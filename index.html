@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <h1>CURRENCY CONVERTOR</h1>
-      <div class="currency-container">
+      <!-- <div class="currency-container">
         <label for="pounds">Pounds:</label>
 
         <input
@@ -46,15 +46,25 @@
 
         <input
           onchange="computeConvert(event)"
-          type="number" 
+          type="number"
           name="dollars"
           id="dollars"
         />
-      </div>
+      </div> -->
 
-      <button id="convert" onclick="computeConvert(event)">Convert</button>
+      <!-- <button id="convert" onclick="computeConvert(event)">Convert</button>
 
-      <button id="reset" onclick="location.reload()">Reset</button>
+      <button id="reset" onclick="location.reload()">Reset</button> -->
+      <!-- API -->
+      <input type="text" name="amountInput" id="amountInput" />
+      <select name="fromCurrency" id="fromCurrency">
+        <option>ZAR</option>
+      </select>
+      <select name="toCurrency" id="toCurrency">
+        <option>USD</option>
+      </select>
+      <button id="convertBtn">Convert</button>
+      <div id="result"></div>
     </div>
 
     <script src="/code.js"></script>

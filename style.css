@@ -1,6 +1,7 @@
 body {
   background-color: #121212;
   color: #fff;
+  font-family: sans-serif;
 }
 
 .container {
@@ -10,4 +11,15 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+input {
+  margin: 10px;
+}
+button {
+  background-color: #007bff;
+  font-size: 18px;
+  border: none;
+  color: white;
+
+  justify-content: center;
 }
