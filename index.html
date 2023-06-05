@@ -14,7 +14,7 @@
         <label for="pounds">Pounds:</label>
 
         <input
-          onchange="computeTemp(event)"
+          onchange="computeConvert(event)"
           type="number"
           name="pounds"
           id="pounds"
@@ -25,14 +25,34 @@
         <label for="rands">Rands:</label>
 
         <input
-          onchange="computeTemp(event)"
+          onchange="computeConvert(event)"
           type="number"
           name="rands"
           id="rands"
         />
       </div>
+      <div class="currency-container">
+        <label for="euros">Euros:</label>
 
-      <button id="convert" onclick="computeTemp(event)">Convert</button>
+        <input
+          onchange="computeConvert(event)"
+          type="number"
+          name="euros"
+          id="euros"
+        />
+      </div>
+      <div class="currency-container">
+        <label for="euros">Dollars:</label>
+
+        <input
+          onchange="computeConvert(event)"
+          type="number" 
+          name="dollars"
+          id="dollars"
+        />
+      </div>
+
+      <button id="convert" onclick="computeConvert(event)">Convert</button>
 
       <button id="reset" onclick="location.reload()">Reset</button>
     </div>
